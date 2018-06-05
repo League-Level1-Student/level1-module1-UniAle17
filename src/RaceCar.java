@@ -33,7 +33,7 @@ public class RaceCar {
 	 * Checks if car need a pit stop
 	 * @return needsPitStop
 	 */
-	boolean isDamaged() {
+	static boolean isDamaged() {
 		return damaged;
 	}
 	/**
@@ -70,4 +70,13 @@ public class RaceCar {
 			System.out.println("Your car has moved into position number "+positionInRace+"!");
 		}
 	}
-}
+	public static void main(String[] args) {
+		RaceCar vroom = new RaceCar("mustang", 1);
+		
+		vroom.pit();
+		vroom.crash();
+		vroom.overtake();
+		}
+		
+		
+	}
